@@ -1,0 +1,38 @@
+.v-animate-title {
+  position: relative;
+
+  .letter {
+    display: inline-block;
+    white-space: pre;
+    font: inherit;
+    line-height: 0.75;
+    transition: .2s linear;
+
+    &--out {
+      opacity: 0;
+      transform-origin: bottom center;
+      transform: rotateX(90deg);
+    }
+
+    &:last-child {
+      color: #ffbf00;
+    }
+  }
+
+  .word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+
+    &--visible {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}

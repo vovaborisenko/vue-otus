@@ -1,5 +1,7 @@
 @import "~normalize.css";
+@import "./fonts";
 @import "./variables";
+@import "./multiselect";
 
 html {
   box-sizing: border-box;
@@ -11,6 +13,10 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
+}
+
+*:focus {
+  outline: 1px dashed $color-accent;
 }
 
 body {
