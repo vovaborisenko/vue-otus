@@ -1,0 +1,25 @@
+@import "~normalize.css";
+@import "./fonts";
+@import "./variables";
+@import "./multiselect";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.15;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: $color-text;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 1px dashed $color-accent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
